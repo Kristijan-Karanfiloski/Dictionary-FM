@@ -67,51 +67,6 @@ const WordDefinitionContainer = () => {
             </button>
           </div>
 
-          {/*{word?.meanings?.map((meaning, meaningIndex) => (*/}
-          {/*  <div key={meaningIndex}>*/}
-          {/*    <div className="synonym-container">*/}
-          {/*      <span className="synonym-container_text">*/}
-          {/*        {meaning?.partOfSpeech}*/}
-          {/*      </span>*/}
-          {/*      <hr className="synonym-container__line" />*/}
-          {/*    </div>*/}
-
-          {/*    <div className="meanings-container">*/}
-          {/*      <p className="meanings-container_p">Meaning</p>*/}
-          {/*      <ul className="meanings-container_ul">*/}
-          {/*        {meaning?.definitions?.map((definition, definitionIndex) => (*/}
-          {/*          // <li key={definitionIndex}>{definition?.definition}</li>*/}
-
-          {/*          <li key={definitionIndex}>*/}
-          {/*            {definition.definition}*/}
-          {/*            {definition.example && <p>{definition.example}</p>}*/}
-          {/*          </li>*/}
-          {/*        ))}*/}
-          {/*      </ul>*/}
-          {/*      <div className="synonyms-container">*/}
-          {/*        <p className="synonyms-container__p1">Synonyms</p>*/}
-          {/*        /!*{meaning?.synonyms?.join(", ")}*!/*/}
-          {/*        {meaning?.synonyms.length !== 0 && (*/}
-          {/*          <p className="synonyms-container__p2">*/}
-          {/*            /!*{meaning?.synonyms?.join(", ")}*!/*/}
-          {/*            {meaning?.synonyms.join(", ")}*/}
-          {/*          </p>*/}
-          {/*        )}*/}
-          {/*        /!*<p className="synonyms-container__p2"></p>*!/*/}
-          {/*      </div>*/}
-          {/*    </div>*/}
-
-          {/*    <div className="example-sentence-container">*/}
-          {/*      /!*<p className="example-sentence-container_p1">Example</p>*!/*/}
-          {/*      <ul className="example-sentence-container_ul">*/}
-          {/*        {meaning?.definitions?.map((definition, definitionIndex) => (*/}
-          {/*          <p key={definitionIndex}>{definition?.example}</p>*/}
-          {/*        ))}*/}
-          {/*      </ul>*/}
-          {/*    </div>*/}
-          {/*  </div>*/}
-          {/*))}*/}
-
           {/*////////////////////////////////////////////////////////////////////////////////////////////////*/}
 
           {word?.meanings?.map((meaning, meaningIndex) => (
@@ -197,48 +152,3 @@ const WordDefinitionContainer = () => {
 };
 
 export default WordDefinitionContainer;
-
-// {
-//   word?.meanings?.map((meaning, meaningIndex) => (
-//     <div key={meaningIndex}>
-//       <div className="synonym-container">
-//         <span className="synonym-container_text">{meaning?.partOfSpeech}</span>
-//         <hr className="synonym-container__line" />
-//       </div>
-//
-//       <div className="meanings-container">
-//         <p className="meanings-container_p">Meaning</p>
-//         <ul className="meanings-container_ul">
-//           {meaning?.definitions?.map((definition, definitionIndex) => (
-//             // <li key={definitionIndex}>{definition?.definition}</li>
-//
-//             <>
-//               <li key={definitionIndex}>{definition.definition}</li>
-//               <p>{definition.example && definition.example}</p>
-//             </>
-//           ))}
-//         </ul>
-//         {meaning.synonyms.length !== 0 && (
-//           <div className="synonyms-container">
-//             <p className="synonyms-container__p1">Synonyms</p>
-//             {/*{meaning?.synonyms?.join(", ")}*/}
-//             <p className="synonyms-container__p2">
-//               {/*{meaning?.synonyms?.join(", ")}*/}
-//               {meaning?.synonyms.join(", ")}
-//             </p>
-//             {/*<p className="synonyms-container__p2"></p>*/}
-//           </div>
-//         )}
-//       </div>
-//
-//       <div className="example-sentence-container">
-//         {/*<p className="example-sentence-container_p1">Example</p>*/}
-//         <ul className="example-sentence-container_ul">
-//           {meaning?.definitions?.map((definition, definitionIndex) => (
-//             <p key={definitionIndex}>{definition?.example}</p>
-//           ))}
-//         </ul>
-//       </div>
-//     </div>
-//   ));
-// }
