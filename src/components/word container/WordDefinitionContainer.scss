@@ -52,7 +52,7 @@
 
   .meanings-container {
     display: grid;
-    border: 1px solid green;
+    //border: 1px solid green;
 
     .meanings-container_p {
       margin: 1rem 0;
@@ -61,6 +61,7 @@
 
     .meanings-container_ul {
       font-size: 15px;
+      margin-bottom: 1rem;
       li {
         margin: 0.5rem 0;
       }
@@ -77,7 +78,7 @@
   }
 
   .synonyms-container {
-    border: 1px solid red;
+    //border: 1px solid red;
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
@@ -86,7 +87,7 @@
       color: #757575;
     }
     .synonyms-container__p2 {
-      border: 5px solid gold;
+      //border: 5px solid gold;
       color: #8F19E8;
       font-weight: bold;
       display: flex;
@@ -98,10 +99,10 @@
 
   .example-sentence-container {
     display: grid;
-    border: 1px solid blue;
+    //border: 1px solid blue;
     
     .example-sentence-container_ul{
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
         p{
           margin: 1rem 0;
         }
