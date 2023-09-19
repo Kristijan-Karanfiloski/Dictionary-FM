@@ -1,0 +1,20 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  //padding: 0.25rem 0.75rem;
+  align-items: center;
+
+  .nav__rightContent {
+    display: flex;
+    align-items: center;
+    padding: 0.15rem 0.25rem;
+  }
+}
+
+@media (max-width: 599px) {
+  //nav {
+  //  display: flex;
+  //  justify-content: space-between;
+  //  padding: 0;
+  //}
+}

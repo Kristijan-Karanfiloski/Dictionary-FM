@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem 1rem;
+}
+
+.wrapperDarkTheme {
+  background: #050505;
+  color: #ffffff;
+}
+
+.wrapperLightTheme {
+  background: white;
+  color: black;
+}
+
+//MOBILE
+
+@media (min-width: 768px) {
+  /* Your styles for devices larger than mobile go here */
+  .wrapper {
+    padding: 3rem 20rem;
+    font-size: 1.5rem;
+  }
+}
+
+//TABLET
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* CSS styles for tablet devices */
+  .wrapper{
+    padding: 3rem 10rem;
+  }
+}
+
+//DESKTOPS
+
+@media (min-width: 1024px) {
+  /* CSS styles for desktop devices */
+  .wrapper{
+    padding: 3rem 20rem;
+  }
+}

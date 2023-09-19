@@ -1,0 +1,152 @@
+.wordInformationContainer {
+  margin-top: 1rem;
+  min-height: 100vh;
+  display: grid;
+
+  .wordContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .wordContainer_leftSide {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .wordContainer_leftSide__h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .wordContainer_leftSide__p {
+        font-size: 1rem;
+        color: #a445ed;
+      }
+    }
+
+    .wordContainer_rightSide {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .synonym-container {
+    display: flex;
+    align-items: center;
+    .synonym-container_text {
+      margin-right: 10px;
+    }
+
+    .synonym-container_text {
+      font-style: italic;
+    }
+
+    .synonym-container__line {
+      flex-grow: 1;
+      height: 1px;
+      background-color: gray;
+      border: none;
+      margin: 0;
+    }
+  }
+
+  .meanings-container {
+    display: grid;
+    border: 1px solid green;
+
+    .meanings-container_p {
+      margin: 1rem 0;
+      color: #757575;
+    }
+
+    .meanings-container_ul {
+      font-size: 15px;
+      li {
+        margin: 0.5rem 0;
+      }
+
+      li::marker {
+        color: #a445ed;
+      }
+    }
+    
+    .meanings-container_ul__p{
+      margin-top: 1rem;
+      color: #757575;
+    }
+  }
+
+  .synonyms-container {
+    border: 1px solid red;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+    .synonyms-container__p1 {
+      color: #757575;
+    }
+    .synonyms-container__p2 {
+      border: 5px solid gold;
+      color: #8F19E8;
+      font-weight: bold;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      justify-content: space-between;
+    }
+  }
+
+  .example-sentence-container {
+    display: grid;
+    border: 1px solid blue;
+    
+    .example-sentence-container_ul{
+      margin-bottom: 1rem;
+        p{
+          margin: 1rem 0;
+        }
+    }
+  }
+
+  .bottom-divider {
+    border-bottom: 2px solid gray;
+    margin-bottom: 1rem;
+  }
+
+  .url-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: .5rem 0;
+    gap: 1rem;
+
+    .url-container_p1 {
+      color: #757575;
+      text-decoration: underline;
+    }
+
+    .url-container-url {
+      display: flex;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+      font-size: 15px;
+      //gap: 0.5rem;
+
+      a {
+        color: #757575;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////
+
+.errorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //border: 2px solid red;
+  margin-top: 4rem; // or 5rem, as you prefer
+  gap: 1rem; // adding gap between the child elements
+  text-align: center; // this will center align the text inside each child element
+}

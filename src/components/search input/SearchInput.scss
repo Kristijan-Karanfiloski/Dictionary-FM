@@ -1,0 +1,42 @@
+.searchInputWrapper {
+  position: relative;
+  .searchInput {
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid transparent;
+  }
+  
+  input[type="text"]:focus {
+    border:2px solid #A445ED;
+  }
+
+  .searchInputDarkTheme {
+    background: #1f1f1f;
+    color: white;
+  }
+  .searchInputLightTheme {
+    background: #f4f4f4;
+    color: #1f1f1f;
+  }
+
+  .searchInput__icon {
+    position: absolute;
+    top: 67%;
+    right: 13px; /* positioned on the right with a small margin */
+    transform: translateY(-50%); /* centering vertically */
+    cursor: pointer; /* optional, to indicate icon is clickable */
+    border: none;
+    background: transparent;
+  }
+  
+}
+  .searchInput__errorMessage{
+    color:red;
+    margin-top: 1rem;
+  }
+
+////////////////////////////////
