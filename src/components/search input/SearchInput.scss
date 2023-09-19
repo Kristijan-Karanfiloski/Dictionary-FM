@@ -9,18 +9,24 @@
     outline: none;
     border: 1px solid transparent;
   }
-  
+
   input[type="text"]:focus {
-    border:2px solid #A445ED;
+    border: 2px solid #a445ed;
   }
 
   .searchInputDarkTheme {
     background: #1f1f1f;
     color: white;
+    //border: 2px solid red;
+    
   }
   .searchInputLightTheme {
     background: #f4f4f4;
     color: #1f1f1f;
+  }
+  
+  .invalidInput{
+    border: 2px solid red;
   }
 
   .searchInput__icon {
@@ -32,11 +38,10 @@
     border: none;
     background: transparent;
   }
-  
 }
-  .searchInput__errorMessage{
-    color:red;
-    margin-top: 1rem;
-  }
+.searchInput__errorMessage {
+  color: red;
+  margin-top: 1rem;
+}
 
 ////////////////////////////////

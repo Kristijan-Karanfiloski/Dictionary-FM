@@ -26,6 +26,7 @@ const SearchInput = () => {
   const handleSearchClick = () => {
     if (search) {
       dispatch(getWordsFromDictionary(search));
+      setIsValid(false);
     } else {
       setIsValid(true);
     }
@@ -54,9 +55,15 @@ const SearchInput = () => {
         style={{ fontFamily: `${font}` }}
       >
         <input
+          // className={`searchInput ${
+          //   theme === "dark" || !isValid
+          //     ? "searchInputDarkTheme"
+          //     : "searchInputLightTheme"
+          // }`}
+
           className={`searchInput ${
             theme === "dark" ? "searchInputDarkTheme" : "searchInputLightTheme"
-          }`}
+          } ${isValid ? "invalidInput" : ""}`}
           type="text"
           placeholder="Search for any word..."
           value={search}
